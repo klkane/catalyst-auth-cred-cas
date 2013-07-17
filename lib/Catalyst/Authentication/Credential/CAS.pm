@@ -5,7 +5,7 @@ use namespace::autoclean;
 use Authen::CAS::Client;
 use Moose;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 has uri            => ( is => 'ro', isa => 'Str', required => 1 );
@@ -37,7 +37,7 @@ sub authenticate {
 
   # derive a service URI if one is not provided
   my $service = defined $authinfo->{service}
-              ? $authinfo->{service} : $c->uri_for( $c->action );
+              ? $authinfo->{service} : $c->uri_for( $c->action, $c->req->captures );
 
   # look for ticket in authinfo and then request parameters
   my $ticket  = defined $authinfo->{ticket}

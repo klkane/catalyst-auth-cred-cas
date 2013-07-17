@@ -1,3 +1,8 @@
+changes from 0.02 to 0.03
+=========================
+
+  * making service uri lookup work with actions that have captures/arguments
+
 changes from 0.01 to 0.02
 =========================
 
