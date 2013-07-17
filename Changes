@@ -1,0 +1,11 @@
+changes from 0.01 to 0.02
+=========================
+
+  * removed end action in test framework to avoid loading of RenderView action
+
+changes from 0.00 to 0.01
+=========================
+
+  * the call to $realm->find_user() wasn't including $c
+
+  * minor fix with the ordering of the sections in the documentation
