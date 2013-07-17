@@ -37,7 +37,7 @@ sub authenticate {
 
   # derive a service URI if one is not provided
   my $service = defined $authinfo->{service}
-              ? $authinfo->{service} : $c->uri_for( $c->action, $c->req->captures );
+              ? $authinfo->{service} : $c->req->uri;
 
   # look for ticket in authinfo and then request parameters
   my $ticket  = defined $authinfo->{ticket}
