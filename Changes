@@ -1,3 +1,9 @@
+changes from 0.03 to 0.04
+=========================
+
+  * fixing a bug where the uri lookup would send the cas ticket back to your sso authority
+    which resulted in being unable to auth properly
+
 changes from 0.02 to 0.03
 =========================
 
