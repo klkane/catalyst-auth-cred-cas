@@ -48,7 +48,7 @@ sub authenticate {
     $c->log->debug( 'Redirecting to CAS for service "'. $service. '"' )
       if $c->debug;
 
-    $c->res->redirect( $self->_login_uri( $service ) );
+    $c->res->redirect( $self->_login_uri( $service, $authinfo ) );
     die $Catalyst::DETACH;
   }
 
