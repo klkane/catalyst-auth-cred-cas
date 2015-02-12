@@ -26,4 +26,4 @@ requires:
   Authen::CAS::Client: 0
   Moose: 0
   namespace::autoclean: 0
-version: 0.02
+version: 0.05

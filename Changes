@@ -1,3 +1,9 @@
+changes from 0.04 to 0.05
+=========================
+
+  * authenticate method was not passing authinfo params on to Authen::CAS::Client 
+    meaning that gateway and renew would not work properly.
+
 changes from 0.03 to 0.04
 =========================
 
